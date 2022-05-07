@@ -14,3 +14,5 @@ for(int k=0; k<10; k++) {
 delete[] texture;
 delere player;
 ```
+
+[see also](https://gist.github.com/mizt/35d1e3485a7e1cc3530556bf0ce96095/)
