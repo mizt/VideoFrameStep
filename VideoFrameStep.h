@@ -50,7 +50,6 @@ class VideoFrameStep {
                 
                 [asset loadValuesAsynchronouslyForKeys:[NSArray arrayWithObject:@"tracks"] completionHandler:^{
                     
-
                     this->_width = asset.tracks[0].naturalSize.width;
                     this->_height = asset.tracks[0].naturalSize.height;
                     
@@ -93,10 +92,7 @@ class VideoFrameStep {
         }
     
         ~VideoFrameStep() {
-            // NSLog(@"~VideoFrameStep");
         }
-    
-        
     
         void test() {
             CMTime duration = [[this->_player currentItem] duration];
@@ -173,9 +169,7 @@ class VideoFrameStep {
                 } 
                 
             }
-            
-            //NSLog(@"%f%%",this->_percentage);
-            
+                        
             if(this->_percentage<100) {
                 [this->_player.currentItem stepByCount:1];
             }
